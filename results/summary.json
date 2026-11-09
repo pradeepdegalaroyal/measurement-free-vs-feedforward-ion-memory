@@ -1,0 +1,86 @@
+{
+  "quick": false,
+  "base_params": {
+    "p2": 0.001,
+    "eps0": 0.001,
+    "p_meas": 0.001,
+    "tau_m": 10.0,
+    "p_xt": 0.0,
+    "n2": 6,
+    "p1_ratio": 0.1,
+    "rounds": 3
+  },
+  "validation": {
+    "max_abs_diff_aer": 3.122502256758253e-16
+  },
+  "headline": {
+    "pseudo_threshold_p2_vs_unencoded_tau10": {
+      "mb": 0.021897455931531862,
+      "mf": 0.008075057298270854
+    }
+  },
+  "phase_maps": {
+    "mf_win_fraction_n2_6": 0.30787037037037035,
+    "mf_win_fraction_n2_3": 0.4012345679012346,
+    "mf_win_fraction_n2_1": 0.5540123456790124
+  },
+  "tau_star": {
+    "collapse_loglog_slope": 1.0785494465121261,
+    "collapse_resid_dex": 0.2732024331702885,
+    "tau_star_at_min_p2": {
+      "1": 2.6107746850409868,
+      "2": 6.285564888159134,
+      "3": 9.064609886520087,
+      "6": 18.424795493564524,
+      "9": 27.68399083106905
+    }
+  },
+  "finite_shots": {
+    "tau_cross_grid_nearest": 32.77370883917171,
+    "shots_to_resolve_at_cross": 44298.198320873395,
+    "min_shots_to_resolve": 69.22023862792403,
+    "correct_sign_fraction_outside_10pct_of_cross": 1.0
+  },
+  "rounds": {
+    "ions_mb_3cycles": 5,
+    "ions_mf_3cycles": 9
+  },
+  "readout_threshold": {
+    "n2=1,p2=0.0001": 0.0016393582530060224,
+    "n2=1,p2=0.001": 0.006181035895628349,
+    "n2=1,p2=0.01": 0.027291754955996558,
+    "n2=3,p2=0.0001": 0.009687370300076199,
+    "n2=3,p2=0.001": 0.018558838326024556,
+    "n2=3,p2=0.01": 0.061596692010314556,
+    "n2=6,p2=0.0001": 0.022871378417673654,
+    "n2=6,p2=0.001": 0.035545207817034866,
+    "n2=6,p2=0.01": 0.10417928674450835
+  },
+  "calibration": {
+    "sigma=0": {
+      "misclassified_mean": 0.0,
+      "misclassified_std": 0.0,
+      "regret_mean": 0.0,
+      "regret_std": 0.0
+    },
+    "sigma=0.15": {
+      "misclassified_mean": 0.0375,
+      "misclassified_std": 0.013975424859373685,
+      "regret_mean": 8.857436474403006e-05,
+      "regret_std": 9.958845770473466e-05
+    },
+    "sigma=0.3": {
+      "misclassified_mean": 0.071875,
+      "misclassified_std": 0.028384222069663987,
+      "regret_mean": 0.0003960694615336784,
+      "regret_std": 0.0002567680552231027
+    },
+    "sigma=0.6": {
+      "misclassified_mean": 0.11875,
+      "misclassified_std": 0.03240068961457456,
+      "regret_mean": 0.00226870093173996,
+      "regret_std": 0.0010453039825556152
+    }
+  },
+  "runtime_seconds": 134.81278109550476
+}

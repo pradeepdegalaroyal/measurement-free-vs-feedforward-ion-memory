@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mfqec"
+version = "0.1.0"
+description = "Measurement-free versus feed-forward error correction for a trapped-ion repetition memory"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Degala Chenchupradeep" }]
+dependencies = ["numpy", "pandas", "matplotlib", "qiskit", "qiskit-aer"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
